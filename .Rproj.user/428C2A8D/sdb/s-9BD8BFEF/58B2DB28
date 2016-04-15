@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "Package: choiceBasedConjoint\nType: Package\nTitle: Choiced Based Conjoint\nVersion: 0.1.0\nAuthor: Pat Canny <pat.canny@gmail.com>\nDescription: Creating and analyzing choiced based conjoint surveys\nDepends:\n    AlgDesign\nLicense: MIT\nLazyData: TRUE\nRoxygenNote: 5.0.1\n",
+    "created" : 1460317616451.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3929260450",
+    "id" : "58B2DB28",
+    "lastKnownWriteTime" : 1460317762,
+    "last_content_update" : 1460317762,
+    "path" : "~/choiceBasedConjoint/DESCRIPTION",
+    "project_path" : "DESCRIPTION",
+    "properties" : {
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "dcf"
+}

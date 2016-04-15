@@ -1,0 +1,11 @@
+Package: choiceBasedConjoint
+Type: Package
+Title: Choiced Based Conjoint
+Version: 0.1.0
+Author: Pat Canny <pat.canny@gmail.com>
+Description: Creating and analyzing choiced based conjoint surveys
+Depends:
+    AlgDesign
+License: MIT
+LazyData: TRUE
+RoxygenNote: 5.0.1

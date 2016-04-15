@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "#' Creating a Choice Based Conjoint Survey\n#'\n#' Takes in a vector of levels and variable names, then creates a survey\n#' @param level_vec A vector of variable levels\n#' @param var_names A vector of variable names\n#' @return sorted_survey A sorted CBC survey\n#' @export\n\ncreate_cbc_survey = function(level_vec, var_names){\nrequire(AlgDesign)\n# Create full factorial design\nffd = gen.factorial(level_vec, varNames=var_names, factors=\"all\")\n# Create fractional factorial design\nset.seed(54321)\nfract_fact_size = 0.5*prod(level_vec)\ndes = optFederov(~.,ffd,fract_fact_size)\nsurvey=des$design\n#Create choice sets using random selection without replacement\nsurvey = transform(survey, r1=runif(fract_fact_size))\n#Sort based on random order\nsorted_survey = survey[order(survey$r1),]\nsorted_survey = sorted_survey[var_names] # remove r1 column\nreturn(sorted_survey)\n}\n",
+    "created" : 1460317714688.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1713457500",
+    "id" : "9D6A9CF9",
+    "lastKnownWriteTime" : 1460318445,
+    "last_content_update" : 1460318445622,
+    "path" : "~/choiceBasedConjoint/R/create_cbc_survey.R",
+    "project_path" : "R/create_cbc_survey.R",
+    "properties" : {
+    },
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

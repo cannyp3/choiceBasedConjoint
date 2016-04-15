@@ -1,0 +1,9 @@
+{
+    "path" : "~/choiceBasedConjoint",
+    "sortOrder" : [
+        {
+            "ascending" : true,
+            "columnIndex" : 2
+        }
+    ]
+}
